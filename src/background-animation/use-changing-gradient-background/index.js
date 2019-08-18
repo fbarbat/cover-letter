@@ -1,0 +1,2 @@
+import useChangingGradientBackground from "./useChangingGradientBackground";
+export default useChangingGradientBackground;

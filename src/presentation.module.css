@@ -1,0 +1,47 @@
+.slide1Content {
+    pointer-events: none;
+}
+
+.slide3Content {
+    padding: 45px;
+}
+
+.xkcd {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 0;
+}
+
+@media (max-width: 600px) {
+    .slide1Content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .slide3Content {
+        padding: 0;
+    }
+
+    .slideBusinessList li {
+        font-size: medium;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .slideNobodyKnows {
+        font-size: medium !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .end {
+        font-size: medium;
+    }
+
+    .xkcd {
+        bottom: 0;
+        right: unset;
+        transform: scale(0.4);
+    }
+}

@@ -1,0 +1,6 @@
+@media (max-width: 600px) {
+    .video {
+        height: 100%;
+        transform: translateX(-50%)
+    }
+}
