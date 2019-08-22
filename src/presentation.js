@@ -49,13 +49,13 @@ function Presentation() {
                         <Heading size={1} fit caps textColor="primary">
                             Hello
                         </Heading>
-                        <Text margin="10px 0 0" textColor="primary" fit bold>
+                        <Text margin="15px 0 0" textColor="primary" fit bold>
                             I am Fernando.
                         </Text>
-                        <Text margin="10px 0 0" textColor="#333333" fit bold>
+                        <Text margin="15px 0 0" textColor="#333333" fit bold>
                             Nice to meet you!
                         </Text>
-                        <Text margin="10px 0 0" textColor="#DDDDDD" fit bold>
+                        <Text margin="15px 0 0" textColor="#DDDDDD" fit bold>
                             I am a full-stack developer and this is going to be my cover letter.
                         </Text>
                     </div>
@@ -133,11 +133,10 @@ function Presentation() {
                         I enjoy implementing good-looking user interfaces and great user experiences. <strong>User-centered
                         design</strong> and <strong>usability testing</strong> are the way to go.
                     </Text>
-                    <Text className={styles.slideNobodyKnows} textColor="primary">
-                        This cover letter was implemented using
-                        React. <span style={{textDecoration: 'line-through'}}>You can check the
-                        code <strong>here</strong></span>. <br/>{'//TODO:'} Push it to GitHub :)
-
+                    <Text margin="15px 0 0" className={styles.slideNobodyKnows} textColor="primary">
+                        This cover letter was implemented using <strong>React</strong>. You can check the code here:
+                        &nbsp;
+                        <OutboundLink target="_blank" to="https://github.com/fbarbat/cover-letter">https://github.com/fbarbat/cover-letter</OutboundLink>
                     </Text>
                     <ChartExample/>
                 </Slide>
