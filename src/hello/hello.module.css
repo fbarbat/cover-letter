@@ -1,0 +1,60 @@
+@keyframes fill {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+.hello {
+    transform: scale(1);
+    animation-name: fill;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    fill: transparent;
+}
+
+@keyframes stroke-animation {
+    100% {
+        stroke-dasharray: none;
+        stroke-dashoffset: 0;
+    }
+}
+
+.hello path {
+    animation-name: stroke-animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.hello path:nth-child(1) {
+    animation-delay: 1s;
+    stroke-dashoffset: 1098px;
+    stroke-dasharray: 1098px;
+}
+
+.hello path:nth-child(2) {
+    animation-delay: 1.25s;
+    stroke-dashoffset: 1115px;
+    stroke-dasharray: 1115px;
+}
+
+.hello path:nth-child(3) {
+    animation-delay: 1.5s;
+    stroke-dashoffset: 700px;
+    stroke-dasharray: 700px;
+}
+
+.hello path:nth-child(4) {
+    animation-delay: 1.75s;
+    stroke-dashoffset: 700px;
+    stroke-dasharray: 700px;
+}
+.hello path:nth-child(5) {
+    animation-delay: 2s;
+    stroke-dashoffset: 679px;
+    stroke-dasharray: 679px;
+}

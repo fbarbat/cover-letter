@@ -2,6 +2,25 @@
     pointer-events: none;
 }
 
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.helloRest {
+    opacity: 0;
+    margin-top: 15px;
+    animation-name: fade-in;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
 .slide3Content {
     padding: 45px;
 }

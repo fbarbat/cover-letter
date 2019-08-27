@@ -1,10 +1,8 @@
 import React from 'react';
-import DraftRibbon from "./draft-ribbon";
 import createTheme from 'spectacle/lib/themes/default';
 
 import {
     Deck,
-    Heading,
     ListItem,
     List,
     Image,
@@ -24,6 +22,7 @@ import {OutboundLink} from "react-ga";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons'
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import Hello from "./hello";
 
 const theme = createTheme(
     {
@@ -41,22 +40,19 @@ const theme = createTheme(
 function Presentation() {
     useGoogleAnalytics();
     return (
-        <div>
             <Deck theme={theme}>
                 <Slide>
                     <BackgroundAnimation/>
                     <div className={styles.slide1Content}>
-                        <Heading size={1} fit caps textColor="primary">
-                            Hello
-                        </Heading>
-                        <Text margin="15px 0 0" textColor="primary" fit bold>
+                        <Hello/>
+                        <Text className={styles.helloRest} textColor="primary" fit bold>
                             I am Fernando.
                         </Text>
-                        <Text margin="15px 0 0" textColor="#333333" fit bold>
+                        <Text className={styles.helloRest} textColor="#333333" fit bold>
                             Nice to meet you!
                         </Text>
-                        <Text margin="15px 0 0" textColor="#DDDDDD" fit bold>
-                            I am a full-stack developer and this is going to be my cover letter.
+                        <Text className={styles.helloRest} textColor="#DDDDDD" fit bold>
+                            I am a full-stack developer and this is my cover letter.
                         </Text>
                     </div>
                 </Slide>
@@ -179,8 +175,6 @@ function Presentation() {
                            src="https://imgs.xkcd.com/comics/pointers.png" width={360} height={299}/>
                 </Slide>
             </Deck>
-            <DraftRibbon/>
-        </div>
     );
 }
 
