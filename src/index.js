@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// noinspection ES6UnusedImports
+// eslint-disable-next-line
 import style from './index.module.css'
 
 import Presentation from './presentation';
