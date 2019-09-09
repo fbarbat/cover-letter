@@ -1,4 +1,5 @@
 class ChangingGradientBackgroundController {
+
     constructor(element, gradientGenerator, cycleDurationSeconds, updatesPerSecond) {
         this.element = element;
         this.gradientGenerator = gradientGenerator;

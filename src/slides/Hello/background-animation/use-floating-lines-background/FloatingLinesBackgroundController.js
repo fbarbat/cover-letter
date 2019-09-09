@@ -1,4 +1,5 @@
 class FloatingLinesBackgroundController {
+
     constructor(camera, scene, composer) {
         this.camera = camera;
         this.scene = scene;
@@ -11,7 +12,7 @@ class FloatingLinesBackgroundController {
             y: 0
         };
 
-        this.running = false;
+        this.lastRequestAnimationFrameId = null;
 
         this.bind = this.bind.bind(this);
         this.animate = this.animate.bind(this);
@@ -23,15 +24,13 @@ class FloatingLinesBackgroundController {
     }
 
     animate() {
-        if (this.running) {
-            const now = Date.now();
-            const position = this.camera.position;
-            position.x += ((Math.sin(now * 0.0001) * this.halfWidth * 0.05) + this.mousePosition.x - position.x) * 0.05;
-            position.y += ((Math.cos(now * 0.0001) * this.halfHeight * 0.05) + this.mousePosition.y - position.y) * 0.05;
-            this.camera.lookAt(this.scene.position);
-            this.composer.render();
-            requestAnimationFrame(this.animate);
-        }
+        const now = Date.now();
+        const position = this.camera.position;
+        position.x += ((Math.sin(now * 0.0001) * this.halfWidth * 0.05) + this.mousePosition.x - position.x) * 0.05;
+        position.y += ((Math.cos(now * 0.0001) * this.halfHeight * 0.05) + this.mousePosition.y - position.y) * 0.05;
+        this.camera.lookAt(this.scene.position);
+        this.composer.render();
+        this.lastRequestAnimationFrameId = requestAnimationFrame(this.animate);
     }
 
     bind(container) {
@@ -48,7 +47,7 @@ class FloatingLinesBackgroundController {
     }
 
     release() {
-        this.running = false;
+        cancelAnimationFrame(this.lastRequestAnimationFrameId);
 
         this.canvas.parentElement.removeChild(this.canvas);
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './hello.module.css'
+import styles from './HelloAnimation.module.css'
 
-function Hello() {
+function HelloAnimation() {
     return (
         <svg className={styles.hello} width="100%" viewBox="0 0 984 214" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M187.8 6.39999V208H141.144V125.344H49.56V208H2.904V6.39999H49.56V85.888H141.144V6.39999H187.8Z"
@@ -18,4 +18,4 @@ function Hello() {
     );
 }
 
-export default Hello;
+export default HelloAnimation;

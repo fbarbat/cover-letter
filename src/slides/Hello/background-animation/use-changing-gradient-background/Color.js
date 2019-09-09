@@ -1,4 +1,5 @@
 class Color {
+
     constructor(r, g, b) {
         this.r = r;
         this.g = g;
@@ -20,6 +21,7 @@ class Color {
     toRgbString() {
         return `rgb(${this.r},${this.g},${this.b})`;
     }
+
 }
 
 export default Color;
