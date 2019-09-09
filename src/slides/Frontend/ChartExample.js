@@ -22,7 +22,7 @@ function getWidth() {
 }
 
 function getHeight() {
-    return document.body.clientWidth > 560 ? 350 : undefined;
+    return document.body.clientWidth > 560 ? 250 : undefined;
 }
 
 function ChartExample() {
@@ -40,7 +40,14 @@ function ChartExample() {
     });
 
     return (
-        <div style={{backgroundColor: 'white', textAlign: 'center', padding: '30px', marginTop: '30px'}}>
+        <div style={{
+            backgroundColor: 'white',
+            textAlign: 'center',
+            display: 'inline-block',
+            paddingTop: 30,
+            marginTop: 30,
+            paddingRight: 30
+        }}>
             <Chart type="bar" style={{'display': 'inline-block'}} options={options} series={series}
                    width={width} height={height}/>
         </div>

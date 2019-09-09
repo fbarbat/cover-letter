@@ -1,4 +1,5 @@
 class Gradient {
+
     constructor(from, to, degrees) {
         this.from = from;
         this.to = to;
@@ -28,6 +29,7 @@ class Gradient {
             this.degrees / scalar
         );
     }
+
 }
 
 export default Gradient;
