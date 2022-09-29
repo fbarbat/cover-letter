@@ -13,7 +13,7 @@
     "react-dom": "16.9.0",
     "react-ga": "2.5.7",
     "react-scripts": "3.1.1",
-    "spectacle": "5.7.0",
+    "spectacle": "9.6.0",
     "react-emotion": "8.0.12",
     "three": "0.106.2"
   },
