@@ -10,6 +10,7 @@
 .link {
     color: #2836aa;
     display: block;
+    font-size: xx-large;
 }
 
 @media (max-width: 768px) {

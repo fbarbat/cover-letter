@@ -1,5 +1,16 @@
 .content {
     pointer-events: none;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: auto;
+        height: auto;
+    }
 }
 
 @keyframes fade-in {
@@ -12,11 +23,31 @@
     }
 }
 
+.helloAnimation {
+    width: 100%;
+    flex-shrink: 0;
+}
+
 .afterHello {
     opacity: 0;
-    margin-top: 15px;
     animation-name: fade-in;
-    animation-delay: 4s;
+    animation-delay: 3s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.iAmFernando {
+    color: white;
+}
+
+.niceToMeetYou {
+    color: #333333;
+}
+
+.softwareEngineer {
+    color: #DDDDDD
 }
